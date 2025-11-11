@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelNow - Tu aventura comienza aquí</title>
+  <link rel="stylesheet" href="Estilo.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-nombre">
+      <img src="img/logo.jpg" alt="Logo TravelNow" class="logo">
+      <h1>TravelNow</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="fondo">
+    <h2>Explora el mundo con nosotros</h2>
+  </section>
+
+  <section id="galeria">
+    <h2>Destinos Turísticos</h2>
+    <div class="galeria">
+      <img src="img/playa.jpg" alt="Playa">
+      <img src="img/montaña.jpg" alt="Montaña">
+      <img src="img/ciudad.jpg" alt="Ciudad">
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Video Promocional</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/fYQ8M5D_ND8" 
+              title="Video de lugares exóticos" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="destino" placeholder="Destino favorito" required>
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="lista-contactos">
+      <h3>Contactos Guardados</h3>
+      <ul id="contactos"></ul>
+    </div>
+  </section>
+
+</body>
+</html>
